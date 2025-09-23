@@ -13,6 +13,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background: #0077b6;
   color: #fff;
@@ -23,36 +24,44 @@ header {
 }
 
 header .logo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background: #90e0ef;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 1rem;
+  color: #023e8a;
 }
 
 .hero p {
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
 }
 
+/* Buttons (keep as-is) */
 .cta {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -60,31 +69,46 @@ header nav a {
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-.quick-facts, .preparedness {
+.cta:hover {
+  background: #023e8a;
+}
+
+/* Quick Facts + Preparedness Sections */
+.quick-facts, 
+.preparedness {
   padding: 2rem;
   background: #fff;
-  margin: 1rem auto;
-  max-width: 800px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.quick-facts h2, .preparedness h2 {
+.quick-facts h2, 
+.preparedness h2 {
   margin-bottom: 1rem;
   color: #0077b6;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #90e0ef;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 .quick-facts ul {
   list-style: none;
   padding-left: 0;
+  font-size: 1.05rem;
 }
 
 .quick-facts li {
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
+  padding-left: 0.5rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -96,4 +120,5 @@ footer {
 footer a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
