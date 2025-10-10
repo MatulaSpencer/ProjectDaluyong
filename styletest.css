@@ -58,6 +58,7 @@
       border-radius: 25px;
       transition: all 0.3s ease;
       cursor: pointer;
+      white-space: nowrap;
     }
 
     nav a:hover {
