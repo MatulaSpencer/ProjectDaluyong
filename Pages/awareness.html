@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awareness - Project Daluyong</title>
+  <link rel="stylesheet" href="../styletest.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">🌊 Project Daluyong</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="awareness.html" class="active">Awareness</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+      </div>
+    </div>
+  </header>
+
+  <!-- Awareness Section -->
+  <main>
+    <section class="page-section active">
+      <h2 class="section-title">Flood Preparedness Awareness</h2>
+
+      <!-- Awareness Grid -->
+      <div class="awareness-grid">
+        <div class="awareness-item" onclick="scrollToSection('before')">Before the Storm</div>
+        <div class="awareness-item" onclick="scrollToSection('during')">During the Emergency</div>
+        <div class="awareness-item" onclick="scrollToSection('after')">After the Event</div>
+      </div>
+
+      <!-- Awareness Details -->
+      <section class="hotlines" id="before">
+        <h2>Before the Storm 🌧️</h2>
+        <ul style="line-height: 1.8;">
+          <li>✅ Stay informed about weather forecasts and alerts from PAGASA or local authorities.</li>
+          <li>✅ Prepare an emergency kit with food, water, flashlight, radio, batteries, and first aid supplies.</li>
+          <li>✅ Secure important documents in waterproof containers.</li>
+          <li>✅ Unplug electrical appliances and move valuables to higher ground.</li>
+          <li>✅ Plan evacuation routes and know the nearest shelter in your area.</li>
+        </ul>
+      </section>
+
+      <section class="hotlines" id="during">
+        <h2>During the Emergency 🚨</h2>
+        <ul style="line-height: 1.8;">
+          <li>⚠️ Stay calm and follow instructions from local authorities or rescue teams.</li>
+          <li>⚠️ Evacuate immediately if advised or if water levels start rising.</li>
+          <li>⚠️ Avoid walking or driving through floodwaters — they may be deeper and faster than they appear.</li>
+          <li>⚠️ Keep updated through radio or official social media pages.</li>
+          <li>⚠️ Use text messaging or online communication to contact family — keep lines open for emergencies.</li>
+        </ul>
+      </section>
+
+      <section class="hotlines" id="after">
+        <h2>After the Event 🌤️</h2>
+        <ul style="line-height: 1.8;">
+          <li>🏠 Return home only when authorities declare it safe.</li>
+          <li>🏠 Avoid contact with floodwater — it may be contaminated.</li>
+          <li>🏠 Clean and disinfect items that came in contact with floodwater.</li>
+          <li>🏠 Document damages for insurance or government assistance.</li>
+          <li>🏠 Check for structural damage before entering your home and avoid downed power lines.</li>
+        </ul>
+      </section>
+
+      <!-- Emergency Hotlines -->
+      <div class="hotlines">
+        <h2>🚨 Emergency Hotlines</h2>
+        <div class="hotline-grid">
+          <div class="hotline-item">
+            <strong>National Emergency Hotline</strong>
+            <div class="phone">911</div>
+          </div>
+          <div class="hotline-item">
+            <strong>NDRRMC Operations Center</strong>
+            <div class="phone">(02) 8911-1406</div>
+          </div>
+          <div class="hotline-item">
+            <strong>Philippine Red Cross</strong>
+            <div class="phone">143</div>
+          </div>
+          <div class="hotline-item">
+            <strong>Coast Guard</strong>
+            <div class="phone">(02) 8527-8481</div>
+          </div>
+          <div class="hotline-item">
+            <strong>PAGASA Weather</strong>
+            <div class="phone">(02) 8284-0800</div>
+          </div>
+          <div class="hotline-item">
+            <strong>BFP Fire Emergency</strong>
+            <div class="phone">116</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-footer">
+      <a href="#" class="social-link">📘</a>
+      <a href="#" class="social-link">📷</a>
+      <a href="#" class="social-link">🐦</a>
+    </div>
+    <p>&copy; 2025 Project Daluyong. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</body>
+</html>
