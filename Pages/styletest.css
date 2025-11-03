@@ -11,6 +11,7 @@
       color: #333;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
+      
     }
 
     /* Header */
@@ -690,4 +691,89 @@
       .blog-category {
         min-height: 80px;
       }
+/* === PROJECT DALUYONG BOOTSTRAP FIXES === */
+
+/* Restore body gradient */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #333;
+}
+
+/* Hero section adjustments */
+.hero {
+  text-align: center !important;
+  padding: 5rem 2rem !important;
+  color: white !important;
+  background: linear-gradient(135deg, rgba(44, 90, 160, 0.9), rgba(118, 75, 162, 0.9)) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hero h1 {
+  font-size: 3rem !important;
+  margin-bottom: 1rem !important;
+  color: #fff !important;
+}
+
+.hero p {
+  font-size: 1.3rem !important;
+  margin-bottom: 2rem !important;
+  color: #f8f9ff !important;
+}
+
+/* Access cards style restoration */
+.access-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.access-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  color: #2c5aa0;
+  text-align: center;
+}
+
+/* Quick facts styling */
+.quick-facts-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.quick-facts-section h2 {
+  color: #2c5aa0;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+}
+/* Space for fixed navbar */
+body {
+  padding-top: 90px;
+}
+
+/* Active nav link highlight */
+.nav-link.active {
+  font-weight: 700;
+  color: #2c5aa0 !important;
+  border-bottom: 2px solid #2c5aa0;
+}
+
+/* Search bar alignment fix */
+form.d-flex {
+  align-items: center;
+}
+ 
     }
