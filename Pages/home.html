@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Project Daluyong</title>
@@ -54,42 +55,42 @@
       <div class="row g-4 justify-content-center">
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="alert('Weather feature coming soon!')">
-            <div class="card-icon">🌪️</div>
+            <div class="card-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
             <h3>Current Weather</h3>
             <p>Live weather updates, typhoon tracking, and storm warnings for your area.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="window.location.href='contact.html'">
-            <div class="card-icon">📞</div>
+            <div class="card-icon"><i class="fa-solid fa-phone-volume"></i></div>
             <h3>Emergency Hotlines</h3>
             <p>Quick access to emergency numbers and disaster response units.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="window.location.href='map.html'">
-            <div class="card-icon">🗺️</div>
+            <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
             <h3>Evacuation Centers</h3>
             <p>Find nearby evacuation centers and safe zones.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="window.location.href='awareness.html'">
-            <div class="card-icon">🎒</div>
+            <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
             <h3>Preparedness Guide</h3>
             <p>Essential tips for typhoon preparation and family safety plans.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="window.location.href='map.html'">
-            <div class="card-icon">🌊</div>
+            <div class="card-icon"><i class="fa-solid fa-water"></i></div>
             <h3>Flood Monitoring</h3>
             <p>Real-time flood alerts and affected area maps.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="access-card text-center" onclick="window.location.href='blog.html'">
-            <div class="card-icon">📺</div>
+            <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
             <h3>News & Updates</h3>
             <p>Latest government advisories and community updates.</p>
           </div>
@@ -98,18 +99,51 @@
     </section>
 
     <!-- Emergency Hotlines -->
-    <section class="hotlines mx-auto my-5 p-4 rounded-4 shadow" style="max-width: 900px; background: rgba(255, 255, 255, 0.95);">
-      <h2 class="text-primary text-center mb-4 fw-bold">🚨 Emergency Hotlines</h2>
-      <div class="row g-3 text-center">
-        <div class="col-md-4"><strong>National Emergency Hotline</strong><div class="phone">911</div></div>
-        <div class="col-md-4"><strong>NDRRMC Operations Center</strong><div class="phone">(02) 8911-1406</div></div>
-        <div class="col-md-4"><strong>Philippine Red Cross</strong><div class="phone">143</div></div>
-        <div class="col-md-4"><strong>Coast Guard</strong><div class="phone">(02) 8527-8481</div></div>
-        <div class="col-md-4"><strong>PAGASA Weather</strong><div class="phone">(02) 8284-0800</div></div>
-        <div class="col-md-4"><strong>BFP Fire Emergency</strong><div class="phone">116</div></div>
-      </div>
-    </section>
+    <!-- Emergency Hotlines -->
+<section class="hotlines mx-auto my-5 p-4 rounded-4 shadow" style="max-width: 900px; background: rgba(255, 255, 255, 0.95);">
+  <h2 class="text-primary text-center mb-4 fw-bold">
+    🚨 Emergency Hotlines
+  </h2>
+  <div class="row g-4 text-center hotlines-list">
+    
+    <div class="col-6 col-md-4">
+      <i class="fas fa-phone-alt hotline-icon"></i>
+      <h5>National Emergency Hotline</h5>
+      <p class="hotline-number">911</p>
+    </div>
 
+    <div class="col-6 col-md-4">
+      <i class="fas fa-broadcast-tower hotline-icon"></i>
+      <h5>NDRRMC Operations Center</h5>
+      <p class="hotline-number">(02) 8911-1406</p>
+    </div>
+
+    <div class="col-6 col-md-4">
+      <i class="fas fa-hands-helping hotline-icon"></i>
+      <h5>Philippine Red Cross</h5>
+      <p class="hotline-number">143</p>
+    </div>
+
+    <div class="col-6 col-md-4">
+      <i class="fas fa-anchor hotline-icon"></i>
+      <h5>Coast Guard</h5>
+      <p class="hotline-number">(02) 8527-8481</p>
+    </div>
+
+    <div class="col-6 col-md-4">
+      <i class="fas fa-cloud-sun-rain hotline-icon"></i>
+      <h5>PAGASA Weather</h5>
+      <p class="hotline-number">(02) 8284-0800</p>
+    </div>
+
+    <div class="col-6 col-md-4">
+      <i class="fas fa-fire-extinguisher hotline-icon"></i>
+      <h5>BFP Fire Emergency</h5>
+      <p class="hotline-number">116</p>
+    </div>
+
+  </div>
+</section>
     <!-- Quick Facts -->
     <section class="quick-facts-section mx-auto mb-5 rounded-4 shadow" style="max-width: 900px;">
       <h2>Quick Facts</h2>
@@ -129,10 +163,10 @@
   <!-- Footer -->
   <footer class="text-center text-white py-4" style="background: rgba(44, 90, 160, 0.95);">
     <div class="social-footer mb-3">
-      <a href="#" class="social-link">📘</a>
-      <a href="#" class="social-link">📷</a>
-      <a href="#" class="social-link">🐦</a>
-    </div>
+  <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+</div>
     <p class="mb-0">&copy; 2025 Project Daluyong. All Rights Reserved.</p>
   </footer>
 
