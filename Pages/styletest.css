@@ -289,7 +289,7 @@
       color: #2c5aa0;
       text-align: center;
       font-size: 2rem;
-      background: white;
+      background: #2C5AA0;
       padding: 1.5rem;
       border-radius: 15px 15px 0 0;
       margin: 0;
@@ -799,5 +799,35 @@ form.d-flex {
 .fact-circle i {
   font-size: 3rem;
   color: #0077b6; /* adjust color if needed */
+}
+header {
+  background: url('images/header-bg.png') no-repeat center center/cover;
+  backdrop-filter: brightness(0.8);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+header, 
+header .logo, 
+header .nav-link {
+  color: #fff !important;
+}
+/* Blinking animation */
+@keyframes blinkAlert {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Apply it to the alert banner */
+.alert-banner {
+  animation: blinkAlert 1.5s infinite;
+}
+.carousel-inner img {
+  height: 400px;              /* consistent height */
+  object-fit: cover;          /* crop nicely */
+  border-radius: 15px;        /* matches your design */
 }
 
