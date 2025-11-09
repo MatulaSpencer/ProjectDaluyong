@@ -86,3 +86,23 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const query = this.querySelector('input').value.toLowerCase();
+  const elements = document.querySelectorAll('h1, h2, h3, p, li, a');
+  let found = false;
+
+  elements.forEach(el => {
+    if (el.textContent.toLowerCase().includes(query)) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.style.backgroundColor = 'rgba(255, 255, 0, 0.4)'; // highlight effect
+      setTimeout(() => el.style.backgroundColor = '', 2000); // remove highlight after 2s
+      found = true;
+    }
+  });
+
+  if (!found) {
+    alert('No matching content found on this page.');
+  }
+});

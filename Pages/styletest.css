@@ -347,7 +347,7 @@
     }
 
     .awareness-item {
-      background: #2c5aa0;
+      background: #ffffff;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -365,6 +365,10 @@
       background: #1e3d6f;
       transform: translateY(-3px);
     }
+    body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+}
 
     /* Map Section */
     .map-container {
@@ -830,4 +834,112 @@ header .nav-link {
   object-fit: cover;          /* crop nicely */
   border-radius: 15px;        /* matches your design */
 }
+/* Awareness cards style */
+.awareness-card {
+  background: linear-gradient(135deg, rgba(44, 90, 160, 0.9), rgba(118, 75, 162, 0.9));
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.awareness-card i {
+  color: #ffd43b; /* yellow accent for icons */
+  transition: transform 0.3s ease;
+}
+
+.awareness-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, rgba(65, 115, 190, 1), rgba(138, 85, 190, 1));
+}
+
+.awareness-card:hover i {
+  transform: scale(1.1);
+}
+/* Awareness cards style */
+.awareness-card {
+  background: linear-gradient(135deg, rgba(44, 90, 160, 0.95), rgba(118, 75, 162, 0.95));
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.awareness-card i {
+  color: #ffd43b; /* yellow accent */
+  transition: transform 0.3s ease;
+}
+
+.awareness-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, rgba(65, 115, 190, 1), rgba(138, 85, 190, 1));
+}
+
+.awareness-card:hover i {
+  transform: scale(1.1);
+}
+/* Awareness cards style */
+.awareness-scroll-card {
+  background: linear-gradient(135deg, rgba(44, 90, 160, 0.95), rgba(118, 75, 162, 0.95));
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.awareness-card i {
+  color: #ffd43b; /* yellow accent */
+  transition: transform 0.3s ease;
+}
+
+.awareness-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, rgba(65, 115, 190, 1), rgba(138, 85, 190, 1));
+}
+
+.awareness-card:hover i {
+  transform: scale(1.1);
+}
+.awareness-detail {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.awareness-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.awareness-detail .list-group-item {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.awareness-detail h2 i {
+  color: #ffdf6c;
+}
+.awareness-detail h2 {
+  color: white !important;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
 

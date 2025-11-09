@@ -17,7 +17,7 @@
   <header class="shadow-sm fixed-top bg-white bg-opacity-95">
     <div class="container d-flex justify-content-between align-items-center py-3">
       <div class="logo fs-3 fw-bold text-primary d-flex align-items-center gap-2">
-        🌊 Project Daluyong
+         Project Daluyong
       </div>
       <nav>
         <ul class="nav">
@@ -43,67 +43,77 @@
 
     <!-- Awareness Cards -->
     <div class="row g-4 text-center justify-content-center my-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow access-card" onclick="scrollToSection('before')">
-          <div class="card-body">
-            <h3 class="card-title text-primary">Before the Storm</h3>
-            <p class="card-text">Learn how to prepare before disaster strikes.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow access-card" onclick="scrollToSection('during')">
-          <div class="card-body">
-            <h3 class="card-title text-primary">During the Emergency</h3>
-            <p class="card-text">Stay safe and informed while the storm is ongoing.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow access-card" onclick="scrollToSection('after')">
-          <div class="card-body">
-            <h3 class="card-title text-primary">After the Event</h3>
-            <p class="card-text">Know what to do and how to recover post-flood.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Before the Storm -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow awareness-scroll-card p-4" onclick="scrollToSection('before')">
+      <i class="fa-solid fa-cloud-bolt fa-3x mb-3"></i>
+      <h3 class="card-title text-white fw-bold">Before the Storm</h3>
+      <p class="card-text text-white-50">Learn how to prepare before disaster strikes.</p>
     </div>
+  </div>
 
-    <!-- Awareness Details -->
-    <section class="hotlines mb-4" id="before">
-      <h2 class="text-center text-primary mb-3">Before the Storm </h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">✅ Stay informed about weather forecasts and alerts from PAGASA or local authorities.</li>
-        <li class="list-group-item">✅ Prepare an emergency kit with food, water, flashlight, radio, batteries, and first aid supplies.</li>
-        <li class="list-group-item">✅ Secure important documents in waterproof containers.</li>
-        <li class="list-group-item">✅ Move valuables to higher ground and unplug electrical appliances.</li>
-        <li class="list-group-item">✅ Plan evacuation routes and know the nearest shelter.</li>
-      </ul>
-    </section>
+  <!-- During the Emergency -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow awareness-scroll-card p-4" onclick="scrollToSection('before')">
+      <i class="fa-solid fa-triangle-exclamation fa-3x mb-3"></i>
+      <h3 class="card-title text-white fw-bold">During the Emergency</h3>
+      <p class="card-text text-white-50">Stay safe and informed while the storm is ongoing.</p>
+    </div>
+  </div>
 
-    <section class="hotlines mb-4" id="during">
-      <h2 class="text-center text-primary mb-3">During the Emergency </h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">⚠️ Stay calm and follow official instructions.</li>
-        <li class="list-group-item">⚠️ Evacuate immediately if advised or if water levels rise.</li>
-        <li class="list-group-item">⚠️ Avoid walking or driving through floodwaters.</li>
-        <li class="list-group-item">⚠️ Stay updated via radio or official pages.</li>
-        <li class="list-group-item">⚠️ Use text messages to contact family; keep lines open.</li>
-      </ul>
-    </section>
+  <!-- After the Event -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow awareness-scroll-card p-4" onclick="scrollToSection('before')">
+      <i class="fa-solid fa-house-chimney fa-3x mb-3"></i>
+      <h3 class="card-title text-white fw-bold">After the Event</h3>
+      <p class="card-text text-white-50">Know what to do and how to recover post-flood.</p>
+    </div>
+  </div>
+</div>
 
-    <section class="hotlines mb-4" id="after">
-      <h2 class="text-center text-primary mb-3">After the Event </h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">🏠 Return home only when authorities say it's safe.</li>
-        <li class="list-group-item">🏠 Avoid contact with floodwater; it may be contaminated.</li>
-        <li class="list-group-item">🏠 Clean and disinfect items touched by floodwater.</li>
-        <li class="list-group-item">🏠 Document damages for insurance or assistance.</li>
-        <li class="list-group-item">🏠 Check for structural damage before entering your home.</li>
-      </ul>
-    </section>
+   <!-- Awareness Details -->
+<section class="hotlines mb-4 awareness-detail d-flex flex-column flex-md-row align-items-center border rounded-4 p-4 shadow" id="before" style="border: 3px solid #667eea;">
+  <div class="flex-grow-1 me-md-4 text-start">
+    <h2 class="text-primary mb-3">Before the Storm</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item border-0">✅ Monitor weather forecasts and updates from PAGASA or local authorities.</li>
+      <li class="list-group-item border-0">✅ Prepare a “Go Bag” with food, water, flashlight, batteries, and first aid essentials.</li>
+      <li class="list-group-item border-0">✅ Keep important documents and valuables in waterproof containers.</li>
+      <li class="list-group-item border-0">✅ Secure your home — unplug appliances and elevate items if you live in a flood-prone area.</li>
+      <li class="list-group-item border-0">✅ Identify safe evacuation routes and inform your family about them.</li>
+    </ul>
+  </div>
+  <img src="images/before-storm.jpg" alt="Before the Storm" class="img-fluid rounded-4 mt-3 mt-md-0" style="max-width: 300px; height: auto;">
+</section>
+
+<section class="hotlines mb-4 awareness-detail d-flex flex-column flex-md-row align-items-center border rounded-4 p-4 shadow" id="during" style="border: 3px solid #6a5acd;">
+  <div class="flex-grow-1 me-md-4 text-start">
+    <h2 class="text-primary mb-3">During the Emergency</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item border-0">⚠️ Stay alert and follow official instructions from disaster response units.</li>
+      <li class="list-group-item border-0">⚠️ Evacuate immediately when advised — don’t wait for floodwaters to rise.</li>
+      <li class="list-group-item border-0">⚠️ Avoid walking, swimming, or driving through moving water.</li>
+      <li class="list-group-item border-0">⚠️ Stay tuned to the radio or official social media pages for updates.</li>
+      <li class="list-group-item border-0">⚠️ Keep communication lines open — use text messages instead of calls.</li>
+    </ul>
+  </div>
+  <img src="images/during-storm.jpg" alt="During the Emergency" class="img-fluid rounded-4 mt-3 mt-md-0" style="max-width: 300px; height: auto;">
+</section>
+
+<section class="hotlines mb-4 awareness-detail d-flex flex-column flex-md-row align-items-center border rounded-4 p-4 shadow" id="after" style="border: 3px solid #764ba2;">
+  <div class="flex-grow-1 me-md-4 text-start">
+    <h2 class="text-primary mb-3">After the Event</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item border-0">🏠 Return home only when authorities declare it safe to do so.</li>
+      <li class="list-group-item border-0">🏠 Avoid contact with floodwater — it may contain harmful waste or chemicals.</li>
+      <li class="list-group-item border-0">🏠 Clean and disinfect everything that came in contact with floodwater.</li>
+      <li class="list-group-item border-0">🏠 Document property damage for insurance and assistance purposes.</li>
+      <li class="list-group-item border-0">🏠 Check for structural damage, gas leaks, and exposed wires before entering.</li>
+    </ul>
+  </div>
+  <img src="images/after-storm.jpg" alt="After the Event" class="img-fluid rounded-4 mt-3 mt-md-0" style="max-width: 300px; height: auto;">
+</section>
+
 
     <!-- Emergency Hotlines -->
     <section class="hotlines">
