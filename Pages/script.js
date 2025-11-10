@@ -24,6 +24,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Backup scroll function
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    const headerOffset = 100;
+    const elementPosition = section.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+
 // ✅ "Join" button functionality on Get Involved page
 const joinForm = document.querySelector("form");
 if (joinForm) {
