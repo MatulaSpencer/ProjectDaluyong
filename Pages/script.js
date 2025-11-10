@@ -24,7 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Backup scroll function in case inline doesn't work
+// Backup scroll function
 function scrollToSection(id) {
   const section = document.getElementById(id);
   if (section) {
