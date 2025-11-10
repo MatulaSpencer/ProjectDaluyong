@@ -51,54 +51,78 @@
     </section>
 
     <!-- Quick Access Section -->
-    <section class="container py-4">
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="alert('Weather feature coming soon!')">
-            <div class="card-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
-            <h3>Current Weather</h3>
-            <p>Live weather updates, typhoon tracking, and storm warnings for your area.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="window.location.href='contact.html'">
-            <div class="card-icon"><i class="fa-solid fa-phone-volume"></i></div>
-            <h3>Emergency Hotlines</h3>
-            <p>Quick access to emergency numbers and disaster response units.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="window.location.href='map.html'">
-            <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <h3>Evacuation Centers</h3>
-            <p>Find nearby evacuation centers and safe zones.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="window.location.href='awareness.html'">
-            <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
-            <h3>Preparedness Guide</h3>
-            <p>Essential tips for typhoon preparation and family safety plans.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="window.location.href='map.html'">
-            <div class="card-icon"><i class="fa-solid fa-water"></i></div>
-            <h3>Flood Monitoring</h3>
-            <p>Real-time flood alerts and affected area maps.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="access-card text-center" onclick="window.location.href='blog.html'">
-            <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
-            <h3>News & Updates</h3>
-            <p>Latest government advisories and community updates.</p>
-          </div>
-        </div>
+<section class="container py-4">
+  <div class="row g-4 justify-content-center">
+
+    <!-- Current Weather -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('https://www.pagasa.dost.gov.ph/weather', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-cloud-bolt fa-2x"></i></div>
+        <h3 class="fw-bold text-white">Current Weather</h3>
+        <p>Live weather updates, typhoon tracking, and storm warnings for your area.</p>
       </div>
-    </section>
+    </div>
 
     <!-- Emergency Hotlines -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('https://e911.gov.ph/emergency-hotline-numbers/', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-phone-volume fa-2x"></i></div>
+        <h3 class="fw-bold text-white">Emergency Hotlines</h3>
+        <p>Quick access to emergency numbers and disaster response units.</p>
+      </div>
+    </div>
+
+    <!-- Evacuation Centers -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('map.html', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-location-dot fa-2x"></i></div>
+        <h3 class="fw-bold text-white">Evacuation Centers</h3>
+        <p>Find nearby evacuation centers and safe zones.</p>
+      </div>
+    </div>
+
+    <!-- Preparedness Guide -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('awareness.html', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-kit-medical fa-2x"></i></div>
+        <h3 class="fw-bold text-white">Preparedness Guide</h3>
+        <p>Essential tips for typhoon preparation and family safety plans.</p>
+      </div>
+    </div>
+
+    <!-- Flood Monitoring -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('https://www.pagasa.dost.gov.ph/flood', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-water fa-2x"></i></div>
+        <h3 class="fw-bold text-white">Flood Monitoring</h3>
+        <p>Real-time flood alerts and affected area maps.</p>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="col-md-4 col-lg-2">
+      <div class="access-card text-center shadow rounded-4 p-3"
+           onclick="window.open('blog.html', '_blank')"
+           style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; cursor: pointer;">
+        <div class="card-icon mb-2"><i class="fa-solid fa-newspaper fa-2x"></i></div>
+        <h3 class="fw-bold text-white">News</h3>
+        <p>Latest government advisories and community updates.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <!-- Emergency Hotlines -->
 <section class="hotlines mx-auto my-5 p-4 rounded-4 shadow" style="max-width: 900px; background: rgba(255, 255, 255, 0.95);">
   <h2 class="text-primary text-center mb-4 fw-bold">
